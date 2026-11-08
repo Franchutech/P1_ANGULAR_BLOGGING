@@ -1,16 +1,36 @@
 <div class="container mt-4">
     <h2 class="text-center mb-4">Sistema Blogging en Angular</h2>
     <div class="row">
-            <!--ÁREA PARA MI FORMULARIO-->
+            <!--ÁREA PARA FORMULARIO-->
         <div class="col-md-5">
             <div class="card p-3 shadow-sm">
-                <h4>Futuro Formulario</h4>
-                <p class="text-muted">Espacio Reservado para Formulario</p>
+                <h4>Nueva Publicación</h4>
+                
+                <div class="mb-3">
+                    <label class="form-label">Título</label>
+                    <input type="text" class="form-control" [(ngModel)]="nuevaNoticia.Titulo">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Ruta Imagen (ej: imgs/imagen1.jpg)</label>
+                    <input type="text" class="form-control" [(ngModel)]="nuevaNoticia.Imagen">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Texto</label>
+                    <textarea class="form-control" [(ngModel)]="nuevaNoticia.Texto"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Fecha</label>
+                    <input type="date" class="form-control" [(ngModel)]="nuevaNoticia.FechaPublicacion">
+                </div>
+
+                <button class="btn btn-success w-100" (click)="agregarNoticia()">Guardar Noticia</button>
             </div>
         </div>
 
-            <!--ÁREA PARA MI FORMULARIO-->
-
+            <!--ÁREA PARA MIS NOTICIAS-->
         <div class="col-md-7">
             <div class="card p-3 shadow-sm">
                 <h4>Listado de Noticias</h4>
