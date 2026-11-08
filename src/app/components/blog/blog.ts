@@ -12,13 +12,13 @@ export class Blog {
   listaPublicaciones = [
     {
       Titulo: 'Novedades de la feria CantabriaTech',
-      Imagen: 'assets/imgs/imagen2.jpg',
+      Imagen: 'imgs/imagen2.jpg',
       Texto: 'Esta semana tuvimos novedades en la feria de empleo Cantabria Tech',
       FechaPublicacion: '2026-11-11'
     },
     {
       Titulo: 'Nuevos Dispositivos de Realidad Aumentada',
-      Imagen: 'assets/imgs/imagen1.jpg',
+      Imagen: 'imgs/imagen1.jpg',
       Texto: 'Esta semana tuvimos novedades en la feria de empleo Cantabria Tech',
       FechaPublicacion: '2026-11-11'
     }
